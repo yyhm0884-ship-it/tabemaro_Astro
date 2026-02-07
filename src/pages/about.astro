@@ -1,7 +1,24 @@
 
 ---
-const pageTitle = "私について"；
 
+const pageTitle = "私について";
+
+const identity = {
+  firstName: "サラ",
+  country: "カナダ",
+  occupation: "技術ライター",
+  hobbies: ["写真", "バードウォッチング", "野球"],
+};
+
+const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "ドキュメントの執筆"];
+
+const happy = true;
+const finished = false;
+const goal = 3;
+
+const skillColor = "crimson";
+
+---
 
 
 <html lang="ja">
@@ -34,5 +51,19 @@ const pageTitle = "私について"；
 <ul>
   {skills.map((skill) => <li>{skill}</li>)}
 </ul>
+<p>私のスキルは以下の通りです。</p>
+<ul>
+  {skills.map((skill) => <li class="skill">{skill}</li>)}
+</ul>
+<style>
+  h1 {
+    color: purple;
+    font-size: 4rem;
+  }
+  .skill {
+    color: green;
+    font-weight: bold;
+  }
+</style>
   </body>
 </html>
