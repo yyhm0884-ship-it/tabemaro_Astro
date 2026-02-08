@@ -1,18 +1,18 @@
 
 ---
 import Footer from '../components/Footer.astro';
-import Nabigation from '../components/Nabigation.astro';
+import Header from '../components/Header.astro';
 import '../styles/global.css';
-const pageTitle = "私について";
+const pageTitle = "たべまろについて";
 
 const identity = {
-  firstName: "サラ",
-  country: "カナダ",
-  occupation: "技術ライター",
-  hobbies: ["写真", "バードウォッチング", "野球"],
+  firstName: "たべまろ",
+  country: "にほん",
+  occupation: "しがない学部生",
+  hobbies: ["ドラム", "アニメウォッチング", "迷走"],
 };
 
-const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "ドキュメントの執筆"];
+const skills = ["スリープ", "どくをはく", "迷走", "無理", "運転", "現進300g5倍"];
 
 const happy = true;
 const finished = false;
@@ -31,8 +31,7 @@ const skillColor = "crimson";
     <title>{pageTitle}</title>
   </head>
   <body>
-    <Nabigation />
-    <h1>私について</h1>
+   <Header />
     <h1>{pageTitle}</h1>
     <h2>... そして私の新しいAstroサイトについて！</h2>
 
