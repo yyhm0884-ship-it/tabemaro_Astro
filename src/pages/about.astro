@@ -1,5 +1,7 @@
 
 ---
+import Footer from '../components/Footer.astro';
+import Nabigation from '../components/Nabigation.astro';
 import '../styles/global.css';
 const pageTitle = "私について";
 
@@ -29,9 +31,7 @@ const skillColor = "crimson";
     <title>{pageTitle}</title>
   </head>
   <body>
-    <a href="/">ホーム</a>
-    <a href="/about/">概要</a>
-    <a href="/blog/">ブログ</a>
+    <Nabigation />
     <h1>私について</h1>
     <h1>{pageTitle}</h1>
     <h2>... そして私の新しいAstroサイトについて！</h2>
@@ -61,5 +61,6 @@ const skillColor = "crimson";
     font-weight: bold;
   }
 </style>
+    <footer />
   </body>
 </html>

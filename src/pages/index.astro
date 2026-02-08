@@ -1,4 +1,6 @@
 ---
+import Footer from '../components/Footer.astro';
+import Nabigation from '../components/Nabigation.astro';
 import '../styles/global.css';
 ---
 
@@ -11,12 +13,10 @@ import '../styles/global.css';
     <title>Astro</title>
   </head>
   <body>
-  <a href="/">ホーム</a>
-  <a href="/about/">概要</a>
-  <a href="/blog/">ブログ</a>
-
+  <Nabigation />
 	<h1>たべまろのAstroサイトへようこそ!</h1>
   <p>ブログを立ち上げるためにAstroの使い方を勉強中</p>
   <p>手始めにこのサイトを作ってみました</p>
+    <Footer />
   </body>
 </html>
