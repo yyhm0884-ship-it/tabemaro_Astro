@@ -14,6 +14,9 @@ const allposts = Object.values(import.meta.glob('.posts/*md', { eager: true }));
  <Header />
 
     <h1>私のAstro学習ブログ</h1>
-     {allposts.map((post: any) => <li><a href={post.url}>{post.frontmatter.title}</a></li>)}
+       <ul>
+        {allposts.map((post: any) => <li><a href={post.url}>{post.frontmatter.title}</a></li>)}
+      </ul>
+
   </body>
 </html>
